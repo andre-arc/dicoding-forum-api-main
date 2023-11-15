@@ -1,0 +1,34 @@
+# Register User
+
+`POST /users`
+
+Register as a new user.
+
+```yaml title="Headers"
+Content-Type: application/json
+```
+
+```json title="Body"
+{
+  "username": "string",
+  "password": "string",
+  "fullname": "string"
+}
+```
+
+### Response
+
+<Success>201 Created</Success>
+
+```json title="Response Body"
+{
+  "status": "success",
+  "data": {
+    "addedUser": {
+      "id": "user-dzK7WmnccYGlrCSJ27btA",
+      "username": "dicoding_1686838876",
+      "fullname": "Dicoding Indonesia"
+    }
+  }
+}
+```

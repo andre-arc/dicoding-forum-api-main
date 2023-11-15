@@ -1,0 +1,43 @@
+# Errors Overview
+
+Sever's response to an error that occurs is quite simple.
+
+### Common Error Response
+
+<Error>Any status code</Error>
+
+```json title="Response body"
+{
+  "status": "fail",
+  "message": "any"
+}
+```
+
+### Uncaught Error Response
+
+<Error>500 Internal Server Error</Error>
+
+```json title="Response body"
+{
+  "status": "error",
+  "message": "terjadi kegagalan pada server kami",
+  "error": {
+    "name": "Error",
+    "message": "connect ECONNREFUSED 127.0.0.1:5432"
+  }
+}
+```
+
+<Info>Please report if you receive this error response</Info>
+
+### Others
+
+<Error>Default Error Response From Hapi.js</Error>
+
+```json title="Response body"
+{
+  "statusCode": 401,
+  "error": "Unauthorized",
+  "message": "Missing authentication"
+}
+```

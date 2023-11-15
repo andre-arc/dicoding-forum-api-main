@@ -1,0 +1,40 @@
+{
+  "name": "dicoding-forum-api",
+  "theme": "#578cda",
+  "sidebar": [
+    ["Getting Started", "/"],
+    ["Error Responses", "/api/errors/overview"],
+    [
+      "Authentications",
+      [
+        ["Auth Overview", "/api/auth/overview"],
+        ["Register User", "/api/auth/register-user"],
+        ["Login User", "/api/auth/login-user"],
+        ["Refresh Token", "/api/auth/refresh-token"],
+        ["Logout User", "/api/auth/logout-user"]
+      ]
+    ],
+    [
+      "Threads",
+      [
+        ["Post Thread", "/api/threads/post"],
+        ["View Thread Details", "/api/threads/get-details"]
+      ]
+    ],
+    [
+      "Thread Comments",
+      [
+        ["Comment On Thread", "/api/threads/comments/post"],
+        ["Delete Comment", "/api/threads/comments/delete"],
+        ["Like Or Dislike A Comment", "/api/threads/comments/likes"]
+      ]
+    ],
+    [
+      "Thread Comment Replies",
+      [
+        ["Reply On Comment", "/api/threads/comments/replies/post"],
+        ["Delete Reply", "/api/threads/comments/replies/delete"]
+      ]
+    ]
+  ]
+}
